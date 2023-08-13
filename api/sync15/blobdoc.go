@@ -131,14 +131,14 @@ func (d *BlobDoc) ReadContentTags(fileEntry *Entry, r RemoteStorage) error {
 			for _, t := range contentFile.FileTags {
 				fileTags = append(fileTags, t.Name)
 			}
-			d.MetadataFile.FileTags = fileTags
+			d.Metadata.FileTags = fileTags
 		}
 		if contentFile.Tags != nil {
 			pageTags := []string{}
 			for _, t := range contentFile.Tags {
 				pageTags = append(pageTags, t.Name)
 			}
-			d.MetadataFile.PageTags = pageTags
+			d.Metadata.PageTags = pageTags
 		}
 	}
 
