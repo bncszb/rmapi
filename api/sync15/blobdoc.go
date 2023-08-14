@@ -270,5 +270,7 @@ func (d *BlobDoc) ToDocument() *model.Document {
 		Type:           d.Metadata.CollectionType,
 		CurrentPage:    d.Metadata.LastOpenedPage,
 		ModifiedClient: lastModified,
+		FileTags: d.Metadata.FileTags,
+		PageTags: d.Metadata.PageTags,
 	}
 }
