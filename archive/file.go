@@ -105,7 +105,7 @@ type Content struct {
 
 	// FileType is "pdf", "epub" or empty for a simple note
 	FileType       string    `json:"fileType"`
-	FileTags       []FileTag `json:"fileTags"`
+	FileTags       []FileTag `json:"tags"`
 	FontName       string    `json:"fontName"`
 	LastOpenedPage int       `json:"lastOpenedPage"`
 	LineHeight     int       `json:"lineHeight"`
